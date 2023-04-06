@@ -1,4 +1,4 @@
-public class Customer {
+public abstract class Customer {
     private String custIc;
     private String phoneNum;
     private String gender;
@@ -44,7 +44,7 @@ public class Customer {
     public boolean getInsurance(){return insurance;}
     public boolean getRegistered(){return registered;}
 
-    //public abstract double calcBill();
+    public abstract double calcBill();
 
     public String toString(){
         return "\nCustomer Details -->" +
