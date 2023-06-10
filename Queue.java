@@ -5,7 +5,7 @@ public class Queue {
         list = new LinkedList();
     }
 
-    public void enqueue(Customer elem) {
+    public void enqueue(Car elem) {
         list.insertAtBack(elem);
     }
 

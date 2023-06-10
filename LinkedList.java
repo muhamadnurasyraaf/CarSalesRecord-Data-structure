@@ -26,7 +26,7 @@ public class LinkedList {
         }
     }
 
-    public Customer getFirst() {
+    public Car getFirst() {
 
         if (isEmpty()) {
             throw new EmptyListException();
@@ -36,7 +36,7 @@ public class LinkedList {
         }
     }
 
-    public Customer getNext() {
+    public Car getNext() {
         if (isEmpty()) {
             throw new EmptyListException();
         } else if (currNode != LastNode) {
@@ -47,9 +47,9 @@ public class LinkedList {
         }
     }
 
-    public Customer removeFront() {
+    public Car removeFront() {
 
-        Customer remove = null;
+        Car remove = null;
 
         if (isEmpty()) {
             throw new EmptyListException();

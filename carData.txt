@@ -1,0 +1,2 @@
+#regnum,model,20000,I,2022512414,Japan,300
+#regNum,model,90000,L,21215515,Germany,532
