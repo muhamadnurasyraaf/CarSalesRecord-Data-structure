@@ -12,7 +12,7 @@ public class Node {
         this.next = nextNode;
     }
 
-    public Customer getContestant() {
+    public Car getContestant() {
         return data;
     }
 

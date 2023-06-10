@@ -8,42 +8,41 @@ public class LinkedList {
         firstNode = LastNode = currNode = null;
     }
 
-    public void insertAtBack(Customer elem) {
-        if(isEmpty()) {
+    public void insertAtBack(Car elem) {
+        if (isEmpty()) {
             firstNode = LastNode = new Node(elem);
-        }else {
+        } else {
             Node obj = new Node(elem);
             LastNode.next = obj;
             LastNode = LastNode.next;
         }
     }
 
-    public void insertAtFront(Customer elem){
-        if(isEmpty()){
+    public void insertAtFront(Car elem) {
+        if (isEmpty()) {
             firstNode = LastNode = new Node(elem);
-        }
-        else{
+        } else {
             firstNode = LastNode.next = new Node(elem);
         }
     }
 
     public Customer getFirst() {
 
-        if(isEmpty()) {
+        if (isEmpty()) {
             throw new EmptyListException();
-        }else {
+        } else {
             currNode = firstNode;
             return currNode.data;
         }
     }
 
     public Customer getNext() {
-        if(isEmpty()) {
+        if (isEmpty()) {
             throw new EmptyListException();
-        }else if(currNode != LastNode){
+        } else if (currNode != LastNode) {
             currNode = currNode.next;
             return currNode.data;
-        }else {
+        } else {
             return null;
         }
     }
@@ -52,15 +51,15 @@ public class LinkedList {
 
         Customer remove = null;
 
-        if(isEmpty()) {
+        if (isEmpty()) {
             throw new EmptyListException();
         }
 
         remove = firstNode.data;
 
-        if(firstNode.equals(LastNode)) {
+        if (firstNode.equals(LastNode)) {
             firstNode = LastNode = null;
-        }else {
+        } else {
             firstNode = firstNode.next;
         }
         return remove;

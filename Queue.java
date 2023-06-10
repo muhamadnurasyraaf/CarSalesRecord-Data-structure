@@ -1,19 +1,19 @@
 public class Queue {
     LinkedList list;
 
-    public Queue(){
+    public Queue() {
         list = new LinkedList();
     }
 
-    public void enqueue(Customer elem){
+    public void enqueue(Customer elem) {
         list.insertAtBack(elem);
     }
 
-    public Customer dequeue(){
+    public Car dequeue() {
         return list.removeFront();
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return list.isEmpty();
     }
 }
