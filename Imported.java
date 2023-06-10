@@ -10,7 +10,7 @@ public class Imported extends Car{
         importTax = 0;
     }
 
-    public Imported(String regNum,String model,double price,String id,String ctry,String tax){
+    public Imported(String regNum,String model,double price,String id,String ctry,double tax){
         super(regNum, model, price);
         importId = id;
         country = ctry;
@@ -19,7 +19,7 @@ public class Imported extends Car{
 
     public String getImportId(){return importId;}
     public String getCountry(){return country;}
-    public String getImportTax(){return importTax;}
+    public double getImportTax(){return importTax;}
 
     public double calcPrice(){
         double netprice = super.getNetPrice();
