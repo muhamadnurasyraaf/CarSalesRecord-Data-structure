@@ -16,15 +16,18 @@ public class Imported extends Car{
         country = ctry;
         importTax = tax;
     }
+    public void setImportId(String id){this.importId = id;}//setter method
+    public void setCountry(String country){this.country = country;}
+    public void setImportTax(double tax){this.importTax = tax;}
 
-    public String getImportId(){return importId;}
+    public String getImportId(){return importId;}//getter method
     public String getCountry(){return country;}
     public double getImportTax(){return importTax;}
 
+    @Override
     public double calcPrice(){
         double netprice = super.getNetPrice();
         double grossPrice = netprice + (netprice * 0.2);
-
         return grossPrice;
     }
 

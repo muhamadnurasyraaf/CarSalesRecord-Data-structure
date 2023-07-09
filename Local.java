@@ -14,12 +14,16 @@ public class Local extends Car{
         manufactureState = state;
     }
 
-    public String getManufactureDate(){return manufactureDate;}
+    public void setManufacturedDate(String date){this.manufactureDate = date;} //setter method
+    public void setManufacturedState(String state){this.manufactureState = state;}
+
+    public String getManufactureDate(){return manufactureDate;} //getter method
     public String getManufactureState(){return manufactureState;}
 
+    @Override
     public double calcPrice(){
-        double tax = netPrice * 0.05;
-        double total = netPrice + tax;
+        double tax = super.getNetPrice() * 0.05;
+        double total = super.getNetPrice() + tax;
         return total;
     }
 
