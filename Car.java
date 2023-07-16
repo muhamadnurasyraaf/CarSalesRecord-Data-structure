@@ -15,7 +15,7 @@ public abstract class Car {
     }
 
     protected void setRegNum(String regNum){this.regNum = regNum;} //setter method
-    protected void setModes(String model){this.regNum = model;}
+    protected void setModel(String model){this.regNum = model;}
     protected void setNetPrice(double netPrice){this.netPrice = netPrice;}
 
 

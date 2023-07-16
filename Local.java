@@ -28,7 +28,7 @@ public class Local extends Car{
     }
 
     public String toString(){
-        return super.toString() + "\nManufacturing Date : " + manufactureDate + "\nManufacturing State : " + manufactureState;
+        return super.toString() + "\nManufacturing Date : " + manufactureDate + "\nManufacturing State : " + manufactureState + "\n";
     }
 
 }

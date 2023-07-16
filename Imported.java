@@ -32,7 +32,7 @@ public class Imported extends Car{
     }
 
     public String toString(){
-        return super.toString() + "\nImport ID: " + importId + "\nCountry Import: " + country + "\nImport Tax: " + importTax + "\nGross Price: " + calcPrice();
+        return super.toString() + "\nImport ID: " + importId + "\nCountry Import: " + country + "\nImport Tax: " + importTax + "\nGross Price: " + calcPrice() + "/n";
     }
 
 }
